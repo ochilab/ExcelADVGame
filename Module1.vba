@@ -17,7 +17,7 @@ End Sub
 Sub stopSound(soundFile As String)
 
   Debug.Print "stopSound() " & dirName & soundFile
-    mciSendString "Stop " & soundFile, "", 0, 0
+    mciSendString "Stop " & dirName & soundFile, "", 0, 0
 
 End Sub
 
@@ -30,6 +30,4 @@ Sub playSound(soundFile As String)
         Exit Sub
     End If
     rc = mciSendString("Play " & dirName & soundFile, "", 0, 0)
-
-
 End Sub
