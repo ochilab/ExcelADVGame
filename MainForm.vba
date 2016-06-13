@@ -40,8 +40,6 @@ Private Sub CommandButton5_Click()
 End Sub
 
 
-Dim hp As Integer
-
 
 Private Sub Label1_Click()
     pauseFlag = False
@@ -55,13 +53,7 @@ End Sub
 
 
 Private Sub UserForm_Activate()
-    
-    
-    hp = 10
-    Label2.Caption = hp
-    
-    
-     
+
     Dim sheet2 As Worksheet
     'データのディレクトリを（1,2）のセルで指定するようにした。
     Set sheet2 = Worksheets("Sheet2")
